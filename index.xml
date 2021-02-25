@@ -6,7 +6,18 @@
     <description>Recent content on Yachi&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 24 Feb 2020 21:52:47 +0800</lastBuildDate><atom:link href="https://yachiwu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Feb 2020 16:00:47 +0800</lastBuildDate><atom:link href="https://yachiwu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HackerRank練習 Arrays: Left Rotation</title>
+      <link>https://yachiwu.github.io/blog/hackerrank_practice/arrays_left-rotation/</link>
+      <pubDate>Tue, 25 Feb 2020 16:00:47 +0800</pubDate>
+      
+      <guid>https://yachiwu.github.io/blog/hackerrank_practice/arrays_left-rotation/</guid>
+      <description>本文主要是用來紀錄Arrays: Left Rotation該題的解題想法
+ Part 1. 題目描述: 本題主要的題目描述可以參考此連結，簡單來說就是針對一個陣列，重複執行往左移的動作。例如將陣列[1,2,3,4,5]做兩次往左移後就會變成是[3,4,5,1,2]。
+Part 2.</description>
+    </item>
+    
     <item>
       <title>AWS Command Line Tool</title>
       <link>https://yachiwu.github.io/blog/aws_cli/</link>

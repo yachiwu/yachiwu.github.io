@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="文章主要用來紀錄Arrays: Left Rotation該題的解題想法">
   <meta name="author" content="Yachi">
   <meta name="generator" content="Hugo 0.81.0" />
 
@@ -108,19 +108,56 @@
 </header>
 <!-- /navigation -->
 
-<section class="section">
+<section class="section-sm">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div id="search-results"></div>
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="py-4 border-bottom" id="summary-${key}">
-            <h4><a href="${link}">${title}</a></h4>
-            <p>${snippet}</p>
-            ${ isset tags }<p>Tags: ${tags}</p>${ end }
-            ${ isset categories }<p>Categories: ${categories}</p>${ end }
-          </div>
-        </script>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/hackerrank"
+          class="text-primary">Hacker rank</a>
+        
+        <h2>HackerRank練習 Arrays: Left Rotation</h2>
+        <div class="mb-3 post-meta">
+          <span>By Yachi</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>25 February 2020</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <blockquote>
+<p>本文主要是用來紀錄Arrays: Left Rotation該題的解題想法</p>
+</blockquote>
+<h3 id="part-1-題目描述">Part 1. 題目描述:</h3>
+<p>本題主要的題目描述可以參考<a href="https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&amp;playlist_slugs%5B%5D=interview-preparation-kit&amp;playlist_slugs%5B%5D=arrays">此連結</a>，簡單來說就是針對一個陣列，重複執行往左移的動作。例如將陣列[1,2,3,4,5]做兩次往左移後就會變成是[3,4,5,1,2]。</p>
+<h3 id="part-2-分析">Part 2. 分析</h3>
+<p>我們可以將往左移的步驟拆開來看，首先第一次將陣列往左移時</p>
+<p>原先的陣列為</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#111">[</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">]</span>
+</code></pre></div><p>第一次往左移後會變成</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#111">[</span><span style="color:#ae81ff">2</span><span style="color:#111">,</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span>
+</code></pre></div><p>第二次往左移後會變成</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#111">[</span><span style="color:#ae81ff">3</span><span style="color:#111">,</span><span style="color:#ae81ff">4</span><span style="color:#111">,</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span><span style="color:#ae81ff">2</span><span style="color:#111">]</span>
+</code></pre></div><p>仔細觀察會發現，每一次往左移時，會把在<strong>陣列最左邊的數字擺放置陣列的最右邊</strong>，而<strong>剩餘在陣列內的數字則會跟著往左移動</strong></p>
+<h3 id="part-3-程式碼">Part 3. 程式碼</h3>
+<p>因此，依照上述邏輯，撰寫的程式碼如下:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a8c8">def</span> <span style="color:#75af00">rotLeft</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">,</span> <span style="color:#111">d</span><span style="color:#111">):</span>
+
+    <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#111">d</span><span style="color:#111">):</span>  <span style="color:#75715e"># 移動d次</span>
+
+        <span style="color:#111">temp</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>  <span style="color:#75715e"># 每一次先將陣列最左邊的數字取出來</span>
+
+        <span style="color:#00a8c8">del</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span>  <span style="color:#75715e"># 接著，刪除最左邊的數字，讓陣列中只保留剩下的數字</span>
+
+        <span style="color:#111">a</span><span style="color:#f92672">.</span><span style="color:#111">append</span><span style="color:#111">(</span><span style="color:#111">temp</span><span style="color:#111">)</span>  <span style="color:#75715e"># 在剩餘的陣列中，加入一開始取出來的最左邊數字</span>
+
+    <span style="color:#00a8c8">return</span> <span style="color:#111">a</span>   
+</code></pre></div>
+        </div>
+
+        
+        
       </div>
     </div>
   </div>

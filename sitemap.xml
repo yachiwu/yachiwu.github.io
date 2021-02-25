@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yachiwu.github.io/blog/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/categories/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/tags/hackerrank/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/categories/hackerrank/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/blog/hackerrank_practice/arrays_left-rotation/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/tags/python/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/tags/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
+    <loc>https://yachiwu.github.io/</loc>
+    <lastmod>2020-02-25T16:00:47+08:00</lastmod>
+  </url><url>
     <loc>https://yachiwu.github.io/tags/aws/</loc>
     <lastmod>2020-02-24T21:52:47+08:00</lastmod>
   </url><url>
@@ -11,19 +35,7 @@
     <loc>https://yachiwu.github.io/blog/aws_cli/</loc>
     <lastmod>2020-02-24T21:52:47+08:00</lastmod>
   </url><url>
-    <loc>https://yachiwu.github.io/blog/</loc>
-    <lastmod>2020-02-24T21:52:47+08:00</lastmod>
-  </url><url>
-    <loc>https://yachiwu.github.io/categories/</loc>
-    <lastmod>2020-02-24T21:52:47+08:00</lastmod>
-  </url><url>
     <loc>https://yachiwu.github.io/tags/notes/</loc>
-    <lastmod>2020-02-24T21:52:47+08:00</lastmod>
-  </url><url>
-    <loc>https://yachiwu.github.io/tags/</loc>
-    <lastmod>2020-02-24T21:52:47+08:00</lastmod>
-  </url><url>
-    <loc>https://yachiwu.github.io/</loc>
     <lastmod>2020-02-24T21:52:47+08:00</lastmod>
   </url><url>
     <loc>https://yachiwu.github.io/about/</loc>
